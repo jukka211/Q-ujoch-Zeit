@@ -1,0 +1,297 @@
+@font-face {
+    font-family:Helvetica-Medium;
+    src: url("helvetica_medium.ttf");
+  }
+
+
+body{
+    background-color:#ffffff;
+    transition: all 500ms ease-in-out;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    
+   
+    
+}
+
+
+.logo {
+   
+    width: 100%;
+    height:90vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -20px;
+    
+   
+}
+
+
+.one, .two, .three, .four, .five, .six, .sev, .eit, .nin, .ten, .el {
+   
+    font-family:Helvetica-Medium;
+    line-height: 240pt;
+    
+    
+    transition: all 50ms ease-in-out;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+    
+    padding-top: 0px;
+    cursor: grab;
+    user-select: none;
+    position: absolute;
+    mix-blend-mode: exclusion;
+    margin-left: 10px;
+
+   
+}
+.el{
+    transform: translateY(-60px);
+
+}
+.four{
+    transform: translateY(20px);
+    z-index: 1;
+    transition: all 75ms ease-in;
+    
+}
+.three{
+    transform: translateY(-15px);
+    transition: all 25ms ease-in-out;
+    
+}
+.two {
+    transform: translateY(10px);
+    transition: all 25ms ease-in-out;
+    z-index: 1;
+}
+.one{
+    transform: translateY(0px);
+    transition: all 75ms ease-in;
+    z-index: 1;
+}
+.sev {
+    transform: translateY(-30px);
+}
+.eit {
+    transform: translateY(90px);
+    z-index: 1;
+}
+.nin{
+    transform: translateY(-10px);
+}
+.ten{
+    transform: translateY(10px);
+}
+
+.five {
+    transform: translateY(-20px);
+    transition: all 40ms ease-in-out;
+}
+.six {
+    transform: translateY(60px);
+    transition: all 40ms ease-in-out;
+}
+.Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .archive, .text, .text-bottom, .kontakt {
+    font-family:Helvetica-Medium;
+    font-size: 18pt;
+    line-height: 18pt;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: absolute;
+    mix-blend-mode: exclusion;
+    transition: all 100ms ease-in-out;
+    z-index: 999;
+    
+}
+.Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10  {
+    display: none;
+}
+.Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10  {
+    left:20px;
+    top:10px;
+    width:90%;
+    mix-blend-mode: exclusion;
+    
+}
+
+
+.description {
+    font-family:Helvetica-Medium;
+    font-size: 18pt;
+    line-height: 18pt;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left:107px;
+    top:40px;
+    text-indent: 40px;
+    width:85%;
+    mix-blend-mode: exclusion;
+    background-color: red;
+    display: none;
+}
+
+.text {
+    left:20px;
+    top:10px;
+    width:90%;
+    
+}
+.text-bottom {
+    left:20px;
+    bottom:10px;
+    width:90%;
+    text-decoration: none !important;
+    color:#ffffff !important;
+}
+.A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10 {
+    left:20px;
+    bottom:10px;
+    width:90%;
+    
+}
+.archive{
+    right:20px;
+    bottom:10px;
+    z-index: 9999;
+    
+}
+.kontakt{
+    right:20px;
+    top:10px;
+    z-index: 9999;
+   
+}
+
+
+.container{
+    position: fixed;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+.archive:hover {
+text-decoration-line: underline;
+text-decoration-thickness:1.4px;
+text-underline-offset: 3px;
+}
+.kontakt:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness:1.4px;
+    text-underline-offset: 3px;
+}
+.block1, .block2, .block3,.block4,.block5,.block6,.block7,.block8,.block9,.block10 {
+    z-index: 999;
+    flex:1;
+    background-color: transparent;
+    margin-bottom: 1px;
+}
+ 
+/* For screens with a width of 2888px or wider */
+@media (min-width: 2888px) {
+   
+    .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .archive, .text, .text-bottom, .kontakt {
+        font-size: 32pt;
+        line-height: 32pt;
+    }
+    .logo {
+        letter-spacing: -36px;
+    }
+    
+}
+
+/* For screens with a width less than 2888px and greater than or equal to 2240px */
+@media (max-width: 2887px) and (min-width: 2240px) {
+   
+    .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .archive, .text, .text-bottom, .kontakt {
+        font-size: 24pt;
+        line-height: 24pt;
+    }
+    .logo {
+        letter-spacing: -28px;
+    }
+    
+}
+
+
+    @media only screen and (max-width: 900px) {
+body {
+overflow-y: hidden;
+}
+
+.one, .two, .three, .four, .five, .six, .sev, .eit, .nin, .ten, .el {
+mix-blend-mode: difference;
+
+}
+
+.Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .text, .text-bottom {
+width:96%;
+left:10px;
+z-index: -1;
+font-size: 12pt;
+line-height: 14pt;
+}
+
+.Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .text {
+top:32px;
+
+}
+
+.archive{
+top:10px;
+bottom:auto;
+left:10px;
+height:auto;
+width:20%;
+}
+.kontakt {
+right:10px;
+}
+
+.archive, .kontakt {
+font-size: 12pt;
+line-height: 14pt;
+}
+}
+
+
+
+@media (max-width: 431px) {
+    
+    .logo {letter-spacing: -22px;
+    }
+    .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .text, .text-bottom {
+        width:96%;
+        left:10px;
+        
+        font-size: 12pt;
+        line-height: 14pt;
+        }
+  }
+
+  @media (max-width: 391px) {
+    .Q, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10, .A, .A2, .A3, .A4, .A5, .A6, .A7, .A8, .A9, .A10, .text, .text-bottom {
+        width:96%;
+        left:10px;
+        
+        font-size: 12pt;
+        line-height: 14pt;
+        }
+    
+    .logo {letter-spacing: -20px;
+    }
+  }
